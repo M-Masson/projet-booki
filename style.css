@@ -68,7 +68,6 @@ nav{
     justify-content: end;
     align-self: start;
     width: 50%;
-    
 }
 header a{
     display: flex;
@@ -80,7 +79,6 @@ header li{
     align-items: center;
     justify-content: end;
     width: 50%;
-    
 }
 .nav-button{
     display: flex;
@@ -98,9 +96,7 @@ header li{
     align-self: end;
 }
 .logo-booki{
-    
     height: 100%;
-
 }
 header li:hover{
     border-top:solid #0065FC;
@@ -132,12 +128,9 @@ h1{
     display:flex;
     gap: 15px;
     align-items: center;
-    width:90%;
     height: 100%;
     padding: 0;
     margin:0;
-    
-
 }
 .filter{
     display: flex;
@@ -148,7 +141,6 @@ h1{
     margin:0;
     padding: 13px 10px;
     gap: 10px;
-
 }
 .group{
     display: flex;
@@ -158,26 +150,13 @@ h1{
     height: 100%;
 }
 .p-filtre{
-    
     font-family:'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
     margin: 0;
-    
-
-}
-.num1{
-    width:60%;
-}
-.num2{
-    width:40%;
-}
-.num3{
-    width:53%;
-    
 }
 .num4{
-    width:47%;
+    min-width:143px;
 }
 .filter:hover{
 background-color: #DEEBFF;
@@ -470,9 +449,7 @@ footer{
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
      /****** Search and Filters ******/
-.filter{
-        padding: 15px 0 15px 10px;
-}
+
 .filterbar{
     width: 80%;
     flex-direction: column;
@@ -599,7 +576,7 @@ nav{
     padding: 0px;
 }
 .filtres{
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     margin: 0px;
@@ -622,10 +599,18 @@ h1{
     margin: 0;
     
 }
+.num4{
+    min-width: auto;
+}
 .filter{
-    width: 100%;
+    width: 40%;
     margin: 0;
+    padding: 13px 15px;
     padding-right: 0px;
+    justify-content: start;
+}
+.texte-filtre{
+    font-size: 14px;
 }
 .group{
     gap: 10px;
